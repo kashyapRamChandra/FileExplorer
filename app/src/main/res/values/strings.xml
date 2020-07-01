@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">File Explorer</string>
-    <string name="made_in_india">MADE IN INDIA</string>
+
+    <string name="made_in_india">
+<![CDATA[<font color=\'#06a7eb\'>MADE</font>] [<font color=\'#06a7eb\'>IN</font>] [<font color=\'#06a7eb\'>INDIA</font>]]>
+    </string>
 </resources>

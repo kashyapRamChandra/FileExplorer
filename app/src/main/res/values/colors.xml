@@ -3,5 +3,38 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
-    <color name="white">#ffffff</color>
+
+
+    <color name="colorGrey">#f0f0f0</color>
+
+    <color name="colorDarkerGray">@android:color/darker_gray</color>
+
+    <color name="colorLuxGreen">#67BB26</color>
+
+    <color name="colorGreen">#008F43</color>
+    <color name="colorOrange">#F58204</color>
+    <color name="colorBlue">#0064B7</color>
+    <color name="colorBlue_200">#90caf9</color>
+
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorRed">#ff0000</color>
+    <color name="app_splash_gradient_top_color">#0064b7</color>
+    <color name="app_splash_gradient_bottom_color">#0b8cba</color>
+
+    <color name="colorDummy">#00ff00</color>
+    <color name="colorSharedElementTransistionBackground">#a0000000</color>
+
+    <color name="warning_color">#FFB12F</color>
+    <color name="error_color">#BE0612</color>
+    <color name="info_color">#515D69</color>
+    <color name="success_color">#3BAF8B</color>
+    <color name="chipIconTint">@color/colorBlue</color>
+
+    <color name="translucent_black">#30000000</color>
+    <color name="colorIndiaSaffron">#FF9933</color>
+    <color name="colorIndiaWhite">#FFFFFF</color>
+    <color name="colorIndiaGreen">#138808</color>
+
 </resources>

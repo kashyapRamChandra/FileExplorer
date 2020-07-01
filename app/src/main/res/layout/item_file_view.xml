@@ -4,14 +4,14 @@
     android:layout_height="wrap_content"
     android:gravity="center_vertical"
     android:orientation="horizontal"
-    android:padding="5dp">
+    android:padding="@dimen/_5sdp">
 
 
     <ImageView
         android:id="@+id/fileImageView"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:padding="10dp"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:padding="@dimen/_10sdp"
         android:src="@drawable/ic_file_24dp" />
 
     <LinearLayout
@@ -21,14 +21,13 @@
 
 
         <TextView
-            android:id="@+id/dir_details_text_view"
+            android:id="@+id/dir_name_text_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:lines="1" />
 
-
         <TextView
-            android:id="@+id/dir_name_text_view"
+            android:id="@+id/dir_details_text_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:lines="1" />

@@ -12,10 +12,10 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.e.myapplication.comstants.BundleConstant;
+import com.e.myapplication.domain.constants.BundleConstant;
 import com.e.myapplication.R;
 import com.e.myapplication.ui.adapter.ExplorerAdapter;
-import com.e.myapplication.models.FileModel;
+import com.e.myapplication.domain.models.FileModel;
 
 import java.io.File;
 import java.util.ArrayList;

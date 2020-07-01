@@ -1,6 +1,6 @@
 package com.e.myapplication.ui;
 
-import com.e.myapplication.models.FileModel;
+import com.e.myapplication.domain.models.FileModel;
 
 public interface OnItemClickListener {
 

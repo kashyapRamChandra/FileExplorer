@@ -1,4 +1,4 @@
-package com.e.myapplication.models;
+package com.e.myapplication.domain.models;
 
 import android.os.Parcel;
 import android.os.Parcelable;

@@ -7,7 +7,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.e.myapplication.R;
-import com.e.myapplication.models.FileModel;
+import com.e.myapplication.domain.models.FileModel;
 
 public class DirectoryViewHolder extends RecyclerView.ViewHolder {
 
