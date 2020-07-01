@@ -1,4 +1,4 @@
-package com.e.myapplication;
+package com.e.myapplication.comstants;
 
 public interface BundleConstant {
 

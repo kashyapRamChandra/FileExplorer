@@ -12,7 +12,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.e.myapplication.BundleConstant;
+import com.e.myapplication.comstants.BundleConstant;
 import com.e.myapplication.R;
 import com.e.myapplication.ui.adapter.ExplorerAdapter;
 import com.e.myapplication.models.FileModel;
@@ -84,7 +84,7 @@ public class ExplorerFragment extends Fragment implements OnItemClickListener {
         if (fileModel != null && fileModel.getFile().isDirectory()) {
             if (getActivity() instanceof MainActivity) {
                 Fragment fragment=((MainActivity) getActivity()).getExplorerFragment(fileModel);
-                ((MainActivity) getActivity()).replaceContentFragment(fragment);
+                ((MainActivity) getActivity()).replaceContentFragment(fragment,true);
             }
         }
     }
