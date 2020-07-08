@@ -31,7 +31,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class SplashActivity extends AppCompatActivity {
+public class SplashActivity extends BaseActivity {
 
     String[] permissionsRequired = new String[]{
             Manifest.permission.WRITE_EXTERNAL_STORAGE
@@ -56,11 +56,6 @@ public class SplashActivity extends AppCompatActivity {
 
     }
 
-    protected void setFlags() {
-        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
-    }
 
     @Override
     protected void onStart() {

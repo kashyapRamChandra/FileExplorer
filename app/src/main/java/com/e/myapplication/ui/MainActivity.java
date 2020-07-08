@@ -13,7 +13,7 @@ import com.e.myapplication.R;
 import com.e.myapplication.domain.models.FileModel;
 import com.e.myapplication.utils.ActivityUtils;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
     public static Intent getIntent(Context context) {
         return new Intent(context, MainActivity.class);
     }
@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setFlags();
         setContentView(R.layout.activity_main);
 
         FileModel fileModel = new FileModel(Environment.getExternalStorageDirectory());

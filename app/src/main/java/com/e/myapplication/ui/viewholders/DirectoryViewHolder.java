@@ -25,12 +25,12 @@ public class DirectoryViewHolder extends RecyclerView.ViewHolder {
         if (fileModel == null)
             return;
         mNameTextView.setText(fileModel.getFile().getName());
-        long count =0;
-        if (fileModel.getFile().listFiles() != null) {
-            count=fileModel.getFile().listFiles().length;
-        }
-
-        mDirDetailsTextView.setText("Files count:" +count);
+//        long count =0;
+//        if (fileModel.getFile().listFiles() != null) {
+//            count=fileModel.getFile().listFiles().length;
+//        }
+//
+//        mDirDetailsTextView.setText("Files count:" +count);
 
     }
 }

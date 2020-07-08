@@ -22,6 +22,7 @@ public class ExplorerAdapter extends RecyclerView.Adapter {
     private final int FILE_TYPE_FILE = 1;
     private final OnItemClickListener mOnItemClickListener;
 
+    LayoutInflater mLayoutInflater;
     private ArrayList<FileModel> fileList = new ArrayList<>();
 
     public ExplorerAdapter(OnItemClickListener onItemClickListener) {
@@ -32,14 +33,19 @@ public class ExplorerAdapter extends RecyclerView.Adapter {
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         RecyclerView.ViewHolder holder = null;
+        View itemView;
+
+        if (mLayoutInflater == null)
+            mLayoutInflater = LayoutInflater.from(parent.getContext());
+
         if (viewType == FILE_TYPE_DIRECTORY) {
-            View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_directory_view, parent, false);
+            itemView = mLayoutInflater.inflate(R.layout.item_directory_view, parent, false);
             holder = new DirectoryViewHolder(itemView);
         } else if (viewType == FILE_TYPE_FILE) {
-            View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_file_view, parent, false);
+            itemView = mLayoutInflater.inflate(R.layout.item_file_view, parent, false);
             holder = new FileViewHolder(itemView);
         } else {
-            View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_dummy_view, parent, false);
+            itemView = mLayoutInflater.inflate(R.layout.item_dummy_view, parent, false);
             holder = new DummyViewHolder(itemView);
         }
 
